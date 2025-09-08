@@ -22,6 +22,11 @@ class Program
                     break;
 
                 case "H":
+                    Console.WriteLine("Anna haettavan tuotteen nimi");
+                    string? haettavaninimi = Console.ReadLine();
+                    string tuotteet = kauppaDB.HaeTuotteet(haettavaninimi);
+                    Console.WriteLine(tuotteet);
+                    break;
 
                 case "X":
                     return;
